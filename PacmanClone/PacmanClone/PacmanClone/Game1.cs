@@ -18,6 +18,9 @@ namespace PacmanClone
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Texture2D background;
+        Texture2D Ship;
+        Player player;
 
         public Game1()
         {
@@ -47,6 +50,10 @@ namespace PacmanClone
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            Ship = Content.Load<Texture2D>("Ship");
+            background = Content.Load<Texture2D>("background");
+            player = new Player(Ship, new Rectangle(0, 0, 86, 137), new Rectangle(0, 0, 860, 200));
+
             // TODO: use this.Content to load your game content here
         }
 
@@ -70,6 +77,8 @@ namespace PacmanClone
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
+            player.Update(gameTime);
+
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -82,9 +91,11 @@ namespace PacmanClone
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+            spriteBatch.Begin();
+            player.Draw(spriteBatch);
 
             // TODO: Add your drawing code here
-
+            spriteBatch.End();
             base.Draw(gameTime);
         }
     }
