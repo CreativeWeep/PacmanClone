@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\enemies.xnb</Output>
-      <Time>2016-04-18T11:08:15.502-04:00</Time>
+      <Output>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\enemies.xnb</Output>
+      <Time>2016-04-20T10:18:25.7112-04:00</Time>
     </Item>
     <Item>
       <Source>moon_and_earth_lroearthrise_frame_0.jpg</Source>
@@ -16,17 +16,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\background.xnb</Output>
-      <Time>2016-04-18T11:08:15.507-04:00</Time>
+      <Output>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\background.xnb</Output>
+      <Time>2016-04-20T10:18:25.7162-04:00</Time>
     </Item>
     <Item>
-      <Source>Ship.jpg</Source>
+      <Source>Ship.png</Source>
       <Name>Ship</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\Ship.xnb</Output>
-      <Time>2016-04-18T11:15:46.651-04:00</Time>
+      <Output>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\Ship.xnb</Output>
+      <Time>2016-04-20T10:36:02.1512-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -34,10 +34,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanCloneContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanCloneContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanCloneContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanCloneContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

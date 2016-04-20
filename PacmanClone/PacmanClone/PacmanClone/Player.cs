@@ -20,7 +20,7 @@ namespace PacmanClone
 
         public Player(Texture2D texture, Rectangle initialFrame, Rectangle screenBounds)
         {
-            character = new Sprite(new Vector2(360, 250), texture, initialFrame, Vector2.Zero);
+            character = new Sprite(new Vector2(360, 380), texture, initialFrame, Vector2.Zero);
 
             playerAreaLimit = new Rectangle(0,screenBounds.Height / 2, screenBounds.Width, screenBounds.Height / 2);
 
@@ -40,10 +40,15 @@ namespace PacmanClone
             character.Velocity = Vector2.Zero;
             HandleKeyboardInput(Keyboard.GetState());
             character.Velocity.Normalize();
+            if (character.Location.X <= 0)
+                character.Location = new Vector2(0, character.Location.Y);
+            if (character.Location.X >= 720)
+                character.Location = new Vector2(720, character.Location.Y);
             character.Velocity *= 160.06f;
             character.Update(gameTime);
         }
 
+        
         public void Draw(SpriteBatch spriteBatch)
         {
             character.Draw(spriteBatch);

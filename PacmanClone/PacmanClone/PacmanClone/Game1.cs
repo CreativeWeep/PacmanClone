@@ -52,7 +52,7 @@ namespace PacmanClone
 
             Ship = Content.Load<Texture2D>("Ship");
             background = Content.Load<Texture2D>("background");
-            player = new Player(Ship, new Rectangle(0, 0, 86, 137), new Rectangle(0, 0, 860, 200));
+            player = new Player(Ship, new Rectangle(0, 0, 86, 137), new Rectangle(21, 36, 40, 60));
 
             // TODO: use this.Content to load your game content here
         }
@@ -92,6 +92,7 @@ namespace PacmanClone
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
+            spriteBatch.Draw(background, new Rectangle(0, 0, 1024, Window.ClientBounds.Height), Color.White);
             player.Draw(spriteBatch);
 
             // TODO: Add your drawing code here
