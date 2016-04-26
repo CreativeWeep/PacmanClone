@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\enemies.xnb</Output>
-      <Time>2016-04-20T10:18:25.7112-04:00</Time>
+      <Time>2016-04-26T10:17:27.6978-04:00</Time>
     </Item>
     <Item>
       <Source>moon_and_earth_lroearthrise_frame_0.jpg</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\background.xnb</Output>
-      <Time>2016-04-20T10:18:25.7162-04:00</Time>
+      <Time>2016-04-26T10:17:27.7028-04:00</Time>
     </Item>
     <Item>
       <Source>Ship.png</Source>
@@ -26,7 +26,16 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\Ship.xnb</Output>
-      <Time>2016-04-20T10:36:02.1512-04:00</Time>
+      <Time>2016-04-26T10:17:27.6978-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteSheet.png</Source>
+      <Name>SpriteSheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\SpriteSheet.xnb</Output>
+      <Time>2016-04-26T10:51:13.5558-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

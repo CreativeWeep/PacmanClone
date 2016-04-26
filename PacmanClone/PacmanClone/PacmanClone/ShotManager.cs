@@ -2,36 +2,82 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace PacmanClone
 {
     class ShotManager
     {
-   /*
-          if (keyState.IsKeyDown(Keys.Space))
-            public Texture2D texture;
+        public List<Sprite> Shots = new List<Sprite>();
+        public Rectangle screenBounds;
 
-            public Vector2 position;
-            public Vector2 velocity;
-            public Vector2 origin;
+        private Texture2D Texture;
+        private static Rectangle InitialFrame;
+        private static int FrameCount;
+        public float shotSpeed;
+        private static int CollisionRadius;
 
-            public bool isVisible;
+        public ShotManager(
+            Texture2D texture,
+            Rectangle initialFrame,
+            int frameCount,
+            int collisionRadius,
+            float shotSpeed,
+            Rectangle screenBounds)
+        {
+            Texture = texture;
+            InitialFrame = initialFrame;
+            FrameCount = frameCount;
+            CollisionRadius = collisionRadius;
+            this.shotSpeed = shotSpeed;
+            this.screenBounds = screenBounds;
+        }
 
-            public Bullets(Texture2D newTexture)
+        public void FireShot(
+            Vector2 location,
+            Vector2 velocity,
+            bool playerFired)
+        {
+            Sprite thisShot = new Sprite(
+                location,
+                Texture,
+                InitialFrame,
+                velocity);
+
+            thisShot.Velocity *= shotSpeed;
+
+            for (int x = 1; x < FrameCount; x++)
             {
-                texture = newTexture;
-                isVisible = false;
+                thisShot.AddFrame(new Rectangle(
+                    InitialFrame.X + (InitialFrame.Width * x),
+                    InitialFrame.Y,
+                    InitialFrame.Width,
+                    InitialFrame.Height));
             }
+            thisShot.CollisionRadius = CollisionRadius;
+            Shots.Add(thisShot);
+        }
 
-         if (keyState.IsKeyDown(Keys.Space))
-
-
-            public void Draw(SpriteBatch spriteBatch)
+        public void Update(GameTime gameTime)
+        {
+            for (int x = Shots.Count - 1; x >= 0; x--)
             {
-                spriteBatch.Draw(texture, position, null, Color.White, 0f, origin, 1f, SpriteEffects.None, 1);
-            }//
-    */
+                Shots[x].Update(gameTime);
+                if (!screenBounds.Intersects(Shots[x].Destination))
+                {
+                    Shots.RemoveAt(x);
+                }
+            }
+        }
+
+        public void Draw(SpriteBatch spriteBatch)
+        {
+            foreach (Sprite shot in Shots)
+            {
+                shot.Draw(spriteBatch);
+            }
+        }
         
-   //}
+    }
 }
-//http://stackoverflow.com/questions/24106375/c-sharp-xna-firing-bullets-using-array?rq=1

@@ -21,6 +21,7 @@ namespace PacmanClone
         Texture2D background;
         Texture2D Ship;
         Player player;
+        ShotManager shotManager;
 
         public Game1()
         {
@@ -50,9 +51,9 @@ namespace PacmanClone
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            Ship = Content.Load<Texture2D>("Ship");
+            Ship = Content.Load<Texture2D>("SpriteSheet");
             background = Content.Load<Texture2D>("background");
-            player = new Player(Ship, new Rectangle(0, 0, 86, 137), new Rectangle(21, 36, 40, 60));
+            player = new Player(Ship, new Rectangle(2, 2, 38, 56), new Rectangle(21, 36, 40, 60));
 
             // TODO: use this.Content to load your game content here
         }
