@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\enemies.xnb</Output>
-      <Time>2016-04-26T10:17:27.6978-04:00</Time>
+      <Output>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\enemies.xnb</Output>
+      <Time>2016-04-28T10:18:41.762-04:00</Time>
     </Item>
     <Item>
       <Source>moon_and_earth_lroearthrise_frame_0.jpg</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\background.xnb</Output>
-      <Time>2016-04-26T10:17:27.7028-04:00</Time>
+      <Output>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\background.xnb</Output>
+      <Time>2016-04-28T10:18:41.767-04:00</Time>
     </Item>
     <Item>
       <Source>Ship.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\Ship.xnb</Output>
-      <Time>2016-04-26T10:17:27.6978-04:00</Time>
+      <Output>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\Ship.xnb</Output>
+      <Time>2016-04-28T10:18:41.757-04:00</Time>
     </Item>
     <Item>
       <Source>SpriteSheet.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\SpriteSheet.xnb</Output>
-      <Time>2016-04-26T10:51:13.5558-04:00</Time>
+      <Output>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\SpriteSheet.xnb</Output>
+      <Time>2016-04-28T10:43:25.468-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -43,10 +43,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanCloneContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanCloneContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanCloneContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanCloneContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

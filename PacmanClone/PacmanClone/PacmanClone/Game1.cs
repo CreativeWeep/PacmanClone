@@ -53,7 +53,7 @@ namespace PacmanClone
 
             Ship = Content.Load<Texture2D>("SpriteSheet");
             background = Content.Load<Texture2D>("background");
-            player = new Player(Ship, new Rectangle(2, 2, 38, 56), new Rectangle(21, 36, 40, 60));
+            player = new Player(Ship, new Rectangle(0, 0, 38, 56), new Rectangle(0,0,this.Window.ClientBounds.Width, this.Window.ClientBounds.Height));
 
             // TODO: use this.Content to load your game content here
         }

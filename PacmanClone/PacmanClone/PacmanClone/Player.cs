@@ -16,7 +16,7 @@ namespace PacmanClone
         public Sprite character;
         private Rectangle playerAreaLimit;
         private int playerRadius = 15;
-        private ShotManager playerShotManager;
+        public ShotManager playerShotManager;
 
        
         private float shotTimer = 0.0f;
@@ -33,10 +33,10 @@ namespace PacmanClone
 
             playerShotManager = new ShotManager(
                 texture,
-                new Rectangle(15, 82, 32, 7),
-                4,
+                new Rectangle(23, 67, 9, 33),
+                1,
                 2,
-                250f,
+                240f,
                 screenBounds);
 
             
@@ -50,7 +50,7 @@ namespace PacmanClone
             {
                 playerShotManager.FireShot(
                     character.Location,
-                    new Vector2(0, -3),
+                    new Vector2(0, -1),
                     true);
                 shotTimer = 0.0f;
             }
