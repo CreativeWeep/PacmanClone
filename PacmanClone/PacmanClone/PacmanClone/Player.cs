@@ -49,7 +49,7 @@ namespace PacmanClone
             if (shotTimer >= minShotTimer)
             {
                 playerShotManager.FireShot(
-                    character.Location,
+                    new Vector2(character.Location.X+15, character.Location.Y+5),
                     new Vector2(0, -1),
                     true);
                 shotTimer = 0.0f;

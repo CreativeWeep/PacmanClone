@@ -2,22 +2,13 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>enemies.png</Source>
-      <Name>enemies</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\enemies.xnb</Output>
-      <Time>2016-04-28T10:18:41.762-04:00</Time>
-    </Item>
-    <Item>
       <Source>moon_and_earth_lroearthrise_frame_0.jpg</Source>
       <Name>background</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\background.xnb</Output>
-      <Time>2016-04-28T10:18:41.767-04:00</Time>
+      <Time>2016-05-16T10:24:33.8302-04:00</Time>
     </Item>
     <Item>
       <Source>Ship.png</Source>
@@ -26,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\Ship.xnb</Output>
-      <Time>2016-04-28T10:18:41.757-04:00</Time>
+      <Time>2016-05-16T10:24:33.8122-04:00</Time>
     </Item>
     <Item>
       <Source>SpriteSheet.png</Source>
@@ -35,7 +26,16 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\SpriteSheet.xnb</Output>
-      <Time>2016-04-28T10:43:25.468-04:00</Time>
+      <Time>2016-05-16T10:24:33.8232-04:00</Time>
+    </Item>
+    <Item>
+      <Source>enemyships.png</Source>
+      <Name>enemyships</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\enemyships.xnb</Output>
+      <Time>2016-05-16T10:41:56.6222-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

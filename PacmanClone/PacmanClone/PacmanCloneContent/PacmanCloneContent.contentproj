@@ -42,11 +42,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="enemies.png">
-      <Name>enemies</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="moon_and_earth_lroearthrise_frame_0.jpg">
       <Name>background</Name>
       <Importer>TextureImporter</Importer>
@@ -63,6 +58,13 @@
   <ItemGroup>
     <Compile Include="SpriteSheet.png">
       <Name>SpriteSheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="enemyships.png">
+      <Name>enemyships</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

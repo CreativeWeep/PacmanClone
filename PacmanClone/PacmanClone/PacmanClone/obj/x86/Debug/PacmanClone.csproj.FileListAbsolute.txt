@@ -4,7 +4,6 @@ C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone
 C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\obj\x86\Debug\PacmanClone.exe
 C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\obj\x86\Debug\PacmanClone.pdb
-C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\enemies.xnb
 C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\background.xnb
 C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\Ship.xnb
 C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\enemies.xnb
@@ -18,3 +17,4 @@ C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone
 C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\obj\x86\Debug\PacmanClone.pdb
 C:\Users\EAHSCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\SpriteSheet.xnb
 C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\SpriteSheet.xnb
+C:\Users\EASHCS\Documents\GitHub\PacmanClone\PacmanClone\PacmanClone\PacmanClone\bin\x86\Debug\Content\enemyships.xnb

@@ -16,12 +16,15 @@ namespace PacmanClone
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
+        Rectangle screenBounds;
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Texture2D background;
         Texture2D Ship;
+        Texture2D enemySheet;
         Player player;
         ShotManager shotManager;
+        EnemyManager enemyManager;
 
         public Game1()
         {
@@ -50,12 +53,15 @@ namespace PacmanClone
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            screenBounds = new Rectangle(0, 0, this.Window.ClientBounds.Width, this.Window.ClientBounds.Height);
 
             Ship = Content.Load<Texture2D>("SpriteSheet");
             background = Content.Load<Texture2D>("background");
-            player = new Player(Ship, new Rectangle(0, 0, 38, 56), new Rectangle(0,0,this.Window.ClientBounds.Width, this.Window.ClientBounds.Height));
+            enemySheet = Content.Load<Texture2D>("enemyships");
+            player = new Player(Ship, new Rectangle(0, 0, 38, 56), screenBounds);
 
-            // TODO: use this.Content to load your game content here
+            enemyManager = new EnemyManager(enemySheet, screenBounds);
+            enemyManager.AddEnemies(1, 10); // Add 10 level 1 enemies
         }
 
         /// <summary>
@@ -79,8 +85,7 @@ namespace PacmanClone
                 this.Exit();
 
             player.Update(gameTime);
-
-            // TODO: Add your update logic here
+            enemyManager.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -95,6 +100,7 @@ namespace PacmanClone
             spriteBatch.Begin();
             spriteBatch.Draw(background, new Rectangle(0, 0, 1024, Window.ClientBounds.Height), Color.White);
             player.Draw(spriteBatch);
+            enemyManager.Draw(spriteBatch);
 
             // TODO: Add your drawing code here
             spriteBatch.End();

@@ -13,10 +13,11 @@ namespace PacmanClone
 {
     class Enemy
     {
-        private Sprite enemySprite;
+        protected Sprite enemySprite;
+        protected Rectangle screenBounds;
         public int level = 1;
         public bool isDestroyed = false;
-        private int enemyRadius = 15;
+        protected int enemyRadius = 15;
 
 
         public Enemy(Texture2D texture, Vector2 location, Rectangle initialFrame, Rectangle screenBounds)
@@ -27,6 +28,7 @@ namespace PacmanClone
                 initialFrame,
                 Vector2.Zero);
 
+            this.screenBounds = screenBounds;
             enemySprite.CollisionRadius = enemyRadius;
         }
 
@@ -58,7 +60,7 @@ namespace PacmanClone
 
 
 
-        public void Update(GameTime gameTime)
+        public virtual void Update(GameTime gameTime)
         {
             if (IsActive())
             {
@@ -66,7 +68,7 @@ namespace PacmanClone
             }
         }
 
-        public void Draw(SpriteBatch spriteBatch)
+        public virtual void Draw(SpriteBatch spriteBatch)
         {
             if (IsActive())
             {
