@@ -54,14 +54,15 @@ namespace PacmanClone
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             screenBounds = new Rectangle(0, 0, this.Window.ClientBounds.Width, this.Window.ClientBounds.Height);
+            
 
             Ship = Content.Load<Texture2D>("SpriteSheet");
             background = Content.Load<Texture2D>("background");
             enemySheet = Content.Load<Texture2D>("enemyships");
             player = new Player(Ship, new Rectangle(0, 0, 38, 56), screenBounds);
 
-            enemyManager = new EnemyManager(enemySheet, screenBounds);
-            enemyManager.AddEnemies(1, 10); // Add 10 level 1 enemies
+            enemyManager = new EnemyManager(enemySheet, new Rectangle(0,0, this.Window.ClientBounds.Width, this.Window.ClientBounds.Height));
+            enemyManager.AddEnemies(1, 4); // Add 10 level 1 enemies
         }
 
         /// <summary>
@@ -83,6 +84,16 @@ namespace PacmanClone
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
+
+            for (int i = 0; i < player.playerShotManager.Shots.Count; i++)
+            {
+                for (int j = 0; j < enemyManager.enemies.Count; j++)
+                {
+                    if (player.playerShotManager.Shots[i].IsBoxColliding(enemyManager.enemies[j].enemySprite.BoundingBoxRect))
+                    {
+                    }
+                }
+            }
 
             player.Update(gameTime);
             enemyManager.Update(gameTime);

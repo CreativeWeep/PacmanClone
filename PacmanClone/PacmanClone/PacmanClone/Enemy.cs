@@ -13,7 +13,7 @@ namespace PacmanClone
 {
     class Enemy
     {
-        protected Sprite enemySprite;
+        public Sprite enemySprite;
         protected Rectangle screenBounds;
         public int level = 1;
         public bool isDestroyed = false;

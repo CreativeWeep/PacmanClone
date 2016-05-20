@@ -23,7 +23,7 @@ namespace PacmanClone
         {
             this.texture = texture;
             this.screenBounds = screenBounds;
-            this.enemyBounds = new Rectangle(64, 64, this.screenBounds.Width-128, this.screenBounds.Height / 2);
+            this.enemyBounds = new Rectangle(64, 64, this.screenBounds.Width-64, this.screenBounds.Height / 2);
 
             enemies = new List<Enemy>();
         }

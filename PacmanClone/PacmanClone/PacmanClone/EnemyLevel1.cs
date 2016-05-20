@@ -36,22 +36,34 @@ namespace PacmanClone
             if (directionChangeTime > 1200f)
             {
                 directionChangeTime = 0;
-                this.enemySprite.Velocity = new Vector2(rand.Next(-100, 100), rand.Next(-100, 100));
+                Vector2 vel = new Vector2(rand.Next(-100, 100)*0, rand.Next(-100, 100));
 
-                base.Update(gameTime);
 
+                /*
                 this.enemySprite.Location = new Vector2(MathHelper.Clamp(this.enemySprite.Center.X, screenBounds.Left, screenBounds.Right)/1.13f,
                                                                            MathHelper.Clamp(this.enemySprite.Center.Y, screenBounds.Top, screenBounds.Bottom)/1.11f);
-
+                */
+                /*
                 if (!this.enemySprite.IsBoxColliding(screenBounds))
                 {
                    
                     this.enemySprite.Velocity *= -1;
                 }
+                */
+                this.enemySprite.Velocity = vel;
 
-                base.Update(gameTime);
             }
 
+            if ((this.enemySprite.Center.Y > 300 && this.enemySprite.Velocity.Y > 0) ||
+                (this.enemySprite.Center.Y < 50 && this.enemySprite.Velocity.Y < 0)
+                )
+            {
+                this.enemySprite.Velocity = this.enemySprite.Velocity * new Vector2(1, -1);
+            }
+
+
+
+            
 
             base.Update(gameTime);
         }

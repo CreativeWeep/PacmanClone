@@ -82,9 +82,11 @@ namespace PacmanClone
                 character.Location = new Vector2(759, character.Location.Y);
             character.Velocity *= 160.06f;
             character.Update(gameTime);
+
+            
         }
 
-        
+
         public void Draw(SpriteBatch spriteBatch)
         {
             playerShotManager.Draw(spriteBatch);
