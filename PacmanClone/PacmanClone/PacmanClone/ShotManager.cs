@@ -13,10 +13,10 @@ namespace PacmanClone
         public Rectangle screenBounds;
 
         private Texture2D Texture;
-        private static Rectangle InitialFrame;
-        private static int FrameCount;
+        private Rectangle InitialFrame;
+        private int FrameCount;
         public float shotSpeed;
-        private static int CollisionRadius;
+        private int CollisionRadius;
 
         public ShotManager(
             Texture2D texture,

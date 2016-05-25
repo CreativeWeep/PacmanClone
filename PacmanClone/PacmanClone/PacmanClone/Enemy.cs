@@ -18,6 +18,7 @@ namespace PacmanClone
         public int level = 1;
         public bool isDestroyed = false;
         protected int enemyRadius = 15;
+        public ShotManager enemyShotmanager;
 
 
         public Enemy(Texture2D texture, Vector2 location, Rectangle initialFrame, Rectangle screenBounds)
@@ -30,6 +31,7 @@ namespace PacmanClone
 
             this.screenBounds = screenBounds;
             enemySprite.CollisionRadius = enemyRadius;
+            enemyShotmanager = new ShotManager(texture, new Rectangle(560, 21, 8, 31), 1, 2, 240f, screenBounds);
         }
 
 

@@ -23,7 +23,6 @@ namespace PacmanClone
         Texture2D Ship;
         Texture2D enemySheet;
         Player player;
-        ShotManager shotManager;
         EnemyManager enemyManager;
 
         public Game1()
@@ -89,8 +88,20 @@ namespace PacmanClone
             {
                 for (int j = 0; j < enemyManager.enemies.Count; j++)
                 {
-                    if (player.playerShotManager.Shots[i].IsBoxColliding(enemyManager.enemies[j].enemySprite.BoundingBoxRect))
+                    if (player.playerShotManager.Shots[i].IsCircleColliding(enemyManager.enemies[j].enemySprite.Center, 32))
                     {
+                        enemyManager.enemies[j].isDestroyed = true;
+                    }
+                }
+                
+            }
+            for (int i = 0; i < enemyManager.enemies.Count; i++)
+            {
+                for (int j = 0; j < enemyManager.enemies[i].enemyShotmanager.Shots.Count; j++)
+                {
+                    if (enemyManager.enemies[i].enemyShotmanager.Shots[j].IsCircleColliding(player.character.Center, 20))
+                    {
+                        player.isDestroyed = true;
                     }
                 }
             }

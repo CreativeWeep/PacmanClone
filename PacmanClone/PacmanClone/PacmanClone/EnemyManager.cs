@@ -18,6 +18,8 @@ namespace PacmanClone
         private Rectangle screenBounds;
         private Rectangle enemyBounds;
         private Random rand = new Random(System.Environment.TickCount);
+        public bool isDestroyed = false;
+        
 
         public EnemyManager(Texture2D texture, Rectangle screenBounds)
         {
@@ -40,6 +42,8 @@ namespace PacmanClone
 
         }
 
+        
+
         public void Update(GameTime gameTime)
         {
             foreach (Enemy e in enemies)
@@ -50,9 +54,12 @@ namespace PacmanClone
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            foreach (Enemy e in enemies)
+            if (!isDestroyed)
             {
-                e.Draw(spriteBatch);
+                foreach (Enemy e in enemies)
+                {
+                    e.Draw(spriteBatch);
+                }
             }
         }
     }

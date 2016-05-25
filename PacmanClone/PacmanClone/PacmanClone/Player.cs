@@ -21,6 +21,7 @@ namespace PacmanClone
        
         private float shotTimer = 0.0f;
         private float minShotTimer = 0.2f;
+        public bool isDestroyed = false;
 
 
         public Player(Texture2D texture, Rectangle initialFrame, Rectangle screenBounds)
@@ -55,6 +56,7 @@ namespace PacmanClone
                 shotTimer = 0.0f;
             }
         }
+        
 
 
 
